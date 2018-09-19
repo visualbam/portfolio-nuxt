@@ -48,7 +48,7 @@ module.exports = {
     /*
     ** Customize the progress-bar color
     */
-    loading: { color: "#3B8070" },
+    loading: { color: "#BA6DDB" },
     /*
     ** Build configuration
     */
@@ -63,5 +63,10 @@ module.exports = {
         "~/modules/typescript.js"
     ],
     axios: {},
-    vuetify: {},
+    vuetify: {
+       theme: {
+           primary: '#BA6DDB',
+           success: '#FFC107'
+       }
+    },
 };
