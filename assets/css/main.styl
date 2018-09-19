@@ -1,11 +1,35 @@
-$design-color = #ed5a73;
+$primary = #ed5a73;
 $development-color = #F9B967;
 $link-color = #BA6DDB;
 
-.v-content__wrap
-    background: url('../../assets/trianglify.svg');
-    background-size: cover;
+.logo {
+    width: 100px;
+    margin-bottom: -5px;
+}
 
-.v-navigation-drawer
-    border-left: 3px solid #BA6DDB;
-    //background: #151030!important;
+.v-toolbar__items {
+    margin: 0 auto;
+    color: white;
+
+    .v-btn__content {
+        color: white;
+    }
+}
+
+.v-toolbar__title {
+    // this is fixed so that it's removed from the content to align the nav in the middle correctly
+    position: fixed;
+}
+
+nav.v-toolbar {
+    background: #151030!important;
+}
+
+.v-toolbar__content {
+    background: url("../../assets/nav-bg.svg") no-repeat;
+    background-size: cover;
+}
+
+    .v-tabs {
+        margin-top: -24px;
+    }

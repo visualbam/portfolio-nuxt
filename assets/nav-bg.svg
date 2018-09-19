@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1280 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-2992.23,0)">
+        <g id="Artboard1" transform="matrix(1,0,0,0.08125,2992.23,0)">
+            <rect x="0" y="0" width="1280" height="800" style="fill:none;"/>
+            <clipPath id="_clip1">
+                <rect x="0" y="0" width="1280" height="800"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g transform="matrix(1,0,0,12.3077,0.666661,-7.03711e-13)">
+                    <g transform="matrix(1,0,0,1,-0.666661,5.68434e-14)">
+                        <rect x="0" y="0" width="1280" height="800" style="fill:rgb(237,237,237);"/>
+                    </g>
+                    <g transform="matrix(1,0,0,1,-1.25056e-12,49)">
+                        <g>
+                            <g>
+                                <g transform="matrix(1,-0,-0,1,-0.666661,-49)">
+                                    <use xlink:href="#_Image2" x="0" y="50.764" width="1280px" height="14.826px" transform="matrix(1,0,0,0.988384,0,0)"/>
+                                </g>
+                                <g transform="matrix(12.5621,0,0,5.07056,-3141.19,-313.232)">
+                                    <rect x="250" y="64.913" width="102" height="166" style="fill:white;"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g>
+                    <g transform="matrix(1,-0,-0,12.3077,0,0)">
+                        <use xlink:href="#_Image3" x="0" y="0" width="1280px" height="65px"/>
+                    </g>
+                    <g transform="matrix(6.5641,0,0,11.2676,-32.8205,7.1316e-13)">
+                        <rect x="5" y="0" width="195" height="71" style="fill:url(#_Linear4);"/>
+                        <clipPath id="_clip5">
+                            <rect x="5" y="0" width="195" height="71"/>
+                        </clipPath>
+                        <g clip-path="url(#_clip5)">
+                            <g transform="matrix(0.045008,0.671694,-0.108435,0.371552,125.372,278)">
+                                <g opacity="0.542451">
+                                    <g transform="matrix(-1.32704,-3.24688,-1.04443,0.887364,96.6319,-490.133)">
+                                        <path d="M-5.762,90.484L78.395,-76.84L96.371,35.236L15.572,210.34L-5.762,90.484Z" style="fill:rgb(237,90,115);"/>
+                                    </g>
+                                    <g transform="matrix(2.51305,-2.504,0.64409,1.27645,-89.667,-535.472)">
+                                        <path d="M-23.909,0.659L88,0L77.791,88.593L-32.376,91.96L-23.909,0.659Z" style="fill:rgb(56,49,96);fill-opacity:0.666667;"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g transform="matrix(0.0318475,0.709399,-0.114476,0.262145,-0.0148702,148.416)">
+                                <g opacity="0.542451">
+                                    <g transform="matrix(-1.32704,-3.24688,-1.04443,0.887364,96.6319,-490.133)">
+                                        <path d="M-5.762,90.484L78.395,-76.84L96.371,35.236L15.572,210.34L-5.762,90.484Z" style="fill:rgb(237,90,115);"/>
+                                    </g>
+                                    <g transform="matrix(2.51305,-2.504,0.64409,1.27645,-89.667,-535.472)">
+                                        <path d="M-23.909,0.659L88,0L77.791,88.593L-32.376,91.96L-23.909,0.659Z" style="fill:rgb(56,49,96);fill-opacity:0.666667;"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <image id="_Image2" width="1280px" height="15px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAAAPCAYAAAC7imKFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABDElEQVR4nO3cWw7CIABFQTDd/5bxiwQpIPVVbGZ+bNFu4OTWGPri4DsAAAAAYF0pX8TqEwAAAAC4kBjEPwAAAAC4rO3g78VCAAAAAFhTah32FoBCHwAAAABcQLkAnI1+4iAAAAAArKe7ALx1Hngn9ImEAAAAAPAZzbA3+2wdAHvhTtADAAAAgPXtYmF+BbgOfM/uAQAAAIA/sIXHuNe7Hp0BAAAAAOdLYd/vUr0AHAVArwcDAAAAwPlm/xMwhRBiuQAcRUBrQAAAAABYQ+5ydQiMjbMwCoCvrAEBAAAAgN9ohcBdBGy9AvwsAIqBAAAAAHCeqeVflheArfXf0RAIAAAAAHxf2eVScdaMgHew6RJZkhieVAAAAABJRU5ErkJggg=="/>
+        <image id="_Image3" width="1280px" height="65px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAABBCAYAAACO2AmZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACNklEQVR4nO3bMWoCYRhF0aeRFNn/bo1OCg24AEG4nNP8U7768s1p2/cAAAAAgJJj233b/bLt58NjAAAAAID3um27brv+B8DTZ/cAAAAAAG9ybPt9ft8ue/wCLAACAAAAQMPxfL+2nS57xL/z5/YAAAAAAG9038vB33mu/wAAAAAgy+UfAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAEHbZdnx6BAAAAADwNsdemt8fFK8Ol2PjYs8AAAAASUVORK5CYII="/>
+        <linearGradient id="_Linear4" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(195,0,0,71,5,35.5)"><stop offset="0" style="stop-color:rgb(21,16,48);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(240,100,142);stop-opacity:1"/></linearGradient>
+    </defs>
+</svg>

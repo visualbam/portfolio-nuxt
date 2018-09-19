@@ -48,7 +48,8 @@ module.exports = {
     /*
     ** Customize the progress-bar color
     */
-    loading: { color: "#BA6DDB" },
+    loading: { color: "#ed5a73" },
+    // loading: { color: "#BA6DDB" },
     /*
     ** Build configuration
     */
@@ -65,8 +66,7 @@ module.exports = {
     axios: {},
     vuetify: {
        theme: {
-           primary: '#BA6DDB',
-           success: '#FFC107'
+           primary: '#ed5a73'
        }
     },
 };
