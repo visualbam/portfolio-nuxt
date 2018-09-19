@@ -7,6 +7,14 @@ $link-color = #BA6DDB;
     margin-bottom: -5px;
 }
 
+.v-content__wrap {
+    background: white;
+}
+
+.v-tabs__slider {
+    height: 3px;
+}
+
 .v-toolbar__items {
     margin: 0 auto;
     color: white;
@@ -30,6 +38,37 @@ nav.v-toolbar {
     background-size: cover;
 }
 
+.v-tabs {
+    margin-top: -24px;
+}
+
+.blog-page {
+    max-width: 800px;
+    padding: 0 4rem 4rem;
+
     .v-tabs {
-        margin-top: -24px;
+        margin-bottom: 4rem;
+        border-bottom: 1px solid #ccc;
     }
+}
+
+.post {
+    border-left: 3px solid $primary;
+    padding-left: 1rem;
+
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+
+    &__category {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    &__content {
+        color: #7D7D7D;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+}

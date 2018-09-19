@@ -1,23 +1,49 @@
 <template>
-    <section>
-        <v-tabs fixed-tabs slider-color="primary">
+    <div class="blog-page">
+        <v-tabs grow slider-color="primary" height="55">
             <v-tab> UI/UX </v-tab>
             <v-tab> Design </v-tab>
             <v-tab> Development </v-tab>
         </v-tabs>
         <div class="post-list">
             <div class="post">
-                <span class="post__category">Design</span> - <span class="post__date">January 5th, 2018</span>
+                <div class="post__meta">
+                    <span class="post__category">Design</span> - <span class="post__date">January 5th, 2018</span>
+                </div>
                 <h2 class="post__headline">5 Common Portfolio Mistakes and How to Fix Them</h2>
-                <div class="post__content">Every week users submit a lot of interesting stuff on our sister site Webdesigner News, highlighting great content from around the web that can be of interest to web designers. The best way to keep track of all the great stories and news being posted is simply to check out the Webdesigner News site, however, in case you missed some here’s a quick and useful compilation of the most popular designer news that we curated from the past week..</div>
+                <div class="post__content">Every week users submit a lot of interesting stuff on our sister site Webdesigner News, highlighting great content from around the web that can be of interest to web designers. The best way to keep track of all the great stories..</div>
                 <div class="post__actions">
                     <div class="post__action">
-                        <v-btn flat>hello</v-btn>
+                        <v-btn flat outline>view post</v-btn>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post__meta">
+                    <span class="post__category">Design</span> - <span class="post__date">January 5th, 2018</span>
+                </div>
+                <h2 class="post__headline">5 Common Portfolio Mistakes and How to Fix Them</h2>
+                <div class="post__content">Every week users submit a lot of interesting stuff on our sister site Webdesigner News, highlighting great content from around the web that can be of interest to web designers. The best way to keep track of all the great stories..</div>
+                <div class="post__actions">
+                    <div class="post__action">
+                        <v-btn flat outline>view post</v-btn>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post__meta">
+                    <span class="post__category">Design</span> - <span class="post__date">January 5th, 2018</span>
+                </div>
+                <h2 class="post__headline">5 Common Portfolio Mistakes and How to Fix Them</h2>
+                <div class="post__content">Every week users submit a lot of interesting stuff on our sister site Webdesigner News, highlighting great content from around the web that can be of interest to web designers. The best way to keep track of all the great stories..</div>
+                <div class="post__actions">
+                    <div class="post__action">
+                        <v-btn flat outline>view post</v-btn>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </template>
 
 <script lang="ts">
