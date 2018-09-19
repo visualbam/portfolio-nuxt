@@ -2,9 +2,14 @@ $primary = #ed5a73;
 $development-color = #F9B967;
 $link-color = #BA6DDB;
 
+a {
+    text-decoration: none;
+}
+
 .logo {
     width: 100px;
     margin-bottom: -5px;
+    cursor: pointer;
 }
 
 .v-content__wrap {
@@ -16,7 +21,7 @@ $link-color = #BA6DDB;
 }
 
 .v-toolbar__items {
-    margin: 0 auto;
+    //margin: 0 auto;
     color: white;
 
     .v-btn__content {
@@ -27,25 +32,26 @@ $link-color = #BA6DDB;
 .v-toolbar__title {
     // this is fixed so that it's removed from the content to align the nav in the middle correctly
     position: fixed;
+    left: 15px;
 }
 
 nav.v-toolbar {
-    background: #151030!important;
-}
-
-.v-toolbar__content {
+    background-color: #151030!important;
     background: url("../../assets/nav-bg.svg") no-repeat;
     background-size: cover;
 }
 
-.v-tabs {
-    margin-top: -24px;
+.v-toolbar__content {
+    justify-content: center;
 }
 
-.blog-page {
-    max-width: 800px;
-    padding: 0 4rem 4rem;
+//.v-toolbar__extension {
+//    padding: 0;
+//    margin-bottom: -8px;
+//    border-bottom: 1px solid #ccc;
+//}
 
+.blog-page {
     .v-tabs {
         margin-bottom: 4rem;
         border-bottom: 1px solid #ccc;
@@ -57,9 +63,13 @@ nav.v-toolbar {
     padding-left: 1rem;
 
     &:not(:last-child) {
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
     }
 
+    &__headline {
+        line-height: 1.25;
+        margin-bottom: 1rem;
+    }
 
     &__category {
         text-transform: uppercase;
@@ -71,4 +81,12 @@ nav.v-toolbar {
         font-size: 1.2rem;
         margin-bottom: 1rem;
     }
+
+    &__meta {
+        font-size: 12px;
+    }
+}
+
+.resume-page {
+    max-width: 960px;
 }
