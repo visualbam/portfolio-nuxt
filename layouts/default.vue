@@ -1,23 +1,24 @@
 <template>
     <v-app id="inspire">
-        <v-toolbar fixed flat app>
-            <v-toolbar-title>
-                <img class="logo" @click="goHome" src="https://raw.githubusercontent.com/visualbam/portfolio-net/master/assets/logo.png" alt="">
-            </v-toolbar-title>
-            <!--<v-spacer></v-spacer>-->
-            <!--<v-tabs centered="true" slot="extension" slider-color="primary">-->
-                <!--<v-tab>UI/UX</v-tab>-->
-                <!--<v-tab>Design</v-tab>-->
-                <!--<v-tab>Development</v-tab>-->
-            <!--</v-tabs>-->
-            <v-toolbar-items>
-                <v-btn flat :to="route.route" v-for="route in routes" :key="route.title">{{route.title}}</v-btn>
-            </v-toolbar-items>
+        <v-toolbar fixed flat app class="navigation">
+            <v-layout row>
+                <v-flex xs12 md8 lg6 offset-md2 offset-lg3>
+                    <v-toolbar card prominent>
+                        <v-toolbar-title>
+                            <img class="logo" @click="goHome" src="https://raw.githubusercontent.com/visualbam/portfolio-net/master/assets/logo.png" alt="">
+                        </v-toolbar-title>
+                        <v-spacer></v-spacer>
+                        <v-toolbar-items>
+                            <v-btn flat :to="route.route" v-for="route in routes" :key="route.title">{{route.title}}</v-btn>
+                        </v-toolbar-items>
+                    </v-toolbar>
+                </v-flex>
+            </v-layout>
         </v-toolbar>
         <v-content>
             <v-container fluid fill-height>
-                <v-layout justify-center>
-                    <v-flex shrink>
+                <v-layout row>
+                    <v-flex xs12 md8 lg6 offset-md2 offset-lg3>
                         <nuxt />
                     </v-flex>
                 </v-layout>

@@ -1,8 +1,8 @@
 <template>
     <div class="blog-page">
-        <v-container>
-            <v-layout row wrap justify-center>
-                <v-flex s12 md6 shrink>
+        <v-container fluid fill-height>
+            <v-layout row wrap>
+                <v-flex>
                     <div class="blog-header">
                         <h1>Blog Feed</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mauris urna, laoreet id vestibulum pharetra, aliquet vel diam. Vestibulum ante ipsum primis in faucibus</p>

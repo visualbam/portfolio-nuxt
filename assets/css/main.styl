@@ -9,6 +9,7 @@ a {
 .logo {
     width: 100px;
     margin-bottom: -5px;
+    padding-left: 8px;
     cursor: pointer;
 }
 
@@ -26,6 +27,7 @@ a {
 
     .v-btn__content {
         color: white;
+        font-size: 12px;
     }
 }
 
@@ -36,9 +38,12 @@ a {
 }
 
 nav.v-toolbar {
-    background-color: #151030!important;
-    background: url("../../assets/nav-bg.svg") no-repeat;
-    background-size: cover;
+    background-color:rgba(0, 0, 0, 0)!important;
+    &.navigation {
+        background: url("../../assets/nav-bg.svg") no-repeat;
+        background-color: #151030!important;
+        background-size: cover;
+    }
 }
 
 .v-toolbar__content {
@@ -85,8 +90,4 @@ nav.v-toolbar {
     &__meta {
         font-size: 12px;
     }
-}
-
-.resume-page {
-    max-width: 960px;
 }

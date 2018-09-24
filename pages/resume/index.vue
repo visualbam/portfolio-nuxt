@@ -2,29 +2,13 @@
     <div class="resume-page">
         <v-container>
             <v-layout row wrap>
-                <v-flex xs12 md12>
+                <v-flex>
                     <h1>Bruce McElroy</h1>
                     <span class="grey--text"><strong>Software Engineer</strong> - Greater Pittsburgh Area </span><br><br>
                     <p>I am a front end developer by day... and a front end developer by night. I continue working on personal projects after "work" hours. I strive to be challenged and I am very self motivated. My goal is to be an asset to your company and wear multiple hats to help streamline projects. Currently I'm deep diving into Javascript and exploring design patterns. I'm also a proficient designer with a focus on UI/UX.</p>
                 </v-flex>
             </v-layout>
         </v-container>
-
-        <!--<v-divider></v-divider>-->
-
-        <!--<v-container grid-list-lg>-->
-            <!--<v-layout style="align-items: center;" row wrap justify-space-between>-->
-                <!--<v-flex pa-4 xs12 sm6 md4 lg2 v-for="company in companies" :key="company.name" v-if="company.logo">-->
-                    <!--<a :href="company.url"  target="_blank">-->
-                        <!--<v-tooltip top color="purple lighten-2">-->
-                            <!--<img  class="company-logo" slot="activator" :src="company.logo" alt="">-->
-                            <!--<span>{{company.position}}</span>-->
-                        <!--</v-tooltip>-->
-                    <!--</a>-->
-                <!--</v-flex>-->
-            <!--</v-layout>-->
-        <!--</v-container>-->
-
         <v-container grid-list-lg>
             <v-layout row wrap>
                 <v-flex md-6 pr-4>
@@ -32,14 +16,14 @@
                     <v-list three-line>
                         <template>
                             <div v-for="company in companies" :key="company.name">
-                                <v-subheader>{{company.name}}</v-subheader>
+                                <v-subheader>{{company.position}}</v-subheader>
                                 <v-divider></v-divider>
                                 <v-list-tile>
                                     <v-list-tile-avatar>
                                         <img :src="company.icon" alt="">
                                     </v-list-tile-avatar>
                                     <v-list-tile-content>
-                                        <v-list-tile-title>{{company.position}}</v-list-tile-title>
+                                        <v-list-tile-title>{{company.name}}</v-list-tile-title>
                                         <v-list-tile-sub-title>{{company.startDate}} - {{company.endDate}}</v-list-tile-sub-title>
                                     </v-list-tile-content>
                                     <v-list-tile-action>
@@ -59,11 +43,11 @@
                     <v-list three-line>
                         <template>
                             <div v-for="school in schools" :key="school.name">
-                                <v-subheader>{{school.name}}</v-subheader>
+                                <v-subheader>{{school.degree}}</v-subheader>
                                 <v-divider></v-divider>
                                 <v-list-tile>
                                     <v-list-tile-content>
-                                        <v-list-tile-title>{{school.degree}}</v-list-tile-title>
+                                        <v-list-tile-title>{{school.name}}</v-list-tile-title>
                                         <v-list-tile-sub-title>{{school.startDate}} - {{school.endDate}}</v-list-tile-sub-title>
                                     </v-list-tile-content>
                                     <v-list-tile-action>

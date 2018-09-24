@@ -5,12 +5,7 @@
 </template>
 
 <script lang="ts">
-    import {
-        Component,
-        Vue
-    } from "nuxt-property-decorator"
-    import { State } from "vuex-class"
-    import Card from "~/components/Card.vue"
+    import { Component, Vue } from "nuxt-property-decorator";
 
     @Component({})
     export default class extends Vue {
