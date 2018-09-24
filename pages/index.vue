@@ -9,6 +9,8 @@
 
     @Component({})
     export default class extends Vue {
+        created() {
 
+        }
     }
 </script>

@@ -81,12 +81,7 @@
 </template>
 
 <script lang="ts">
-    import {
-        Component,
-        Vue
-    } from "nuxt-property-decorator"
-    import { State } from "vuex-class"
-    import Card from "~/components/Card.vue"
+    import { Component, Vue } from "nuxt-property-decorator";
 
     @Component({})
     export default class extends Vue {
@@ -98,14 +93,4 @@
     .blog-page {
         position: relative;
     }
-
-    /*.v-tabs {*/
-        /*position: absolute;*/
-        /*top: 0;*/
-        /*width: calc(100% - 8rem);*/
-    /*}*/
-
-    /*.post-list {*/
-        /*padding-top: 6rem;*/
-    /*}*/
 </style>
