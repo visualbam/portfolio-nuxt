@@ -5,7 +5,7 @@
                 <v-flex xs12 md8 lg6 offset-md2 offset-lg3>
                     <v-toolbar card prominent>
                         <v-toolbar-title>
-                            <img class="logo" @click="goHome" src="https://raw.githubusercontent.com/visualbam/portfolio-net/master/assets/logo.png" alt="">
+                            <img class="logo" @click="goHome" src="~/assets/bam_logo.svg" alt="">
                         </v-toolbar-title>
                         <v-spacer></v-spacer>
                         <v-toolbar-items>
