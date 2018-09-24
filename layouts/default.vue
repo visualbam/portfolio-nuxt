@@ -1,9 +1,9 @@
 <template>
     <v-app id="inspire">
-        <v-toolbar fixed flat app class="navigation">
+        <v-toolbar fixed flat app class="navigation" height="80px">
             <v-layout row>
                 <v-flex xs12 md8 lg6 offset-md2 offset-lg3>
-                    <v-toolbar card prominent>
+                    <v-toolbar card height="80px">
                         <v-toolbar-title>
                             <img class="logo" @click="goHome" src="~/assets/bam_logo.svg" alt="">
                         </v-toolbar-title>
