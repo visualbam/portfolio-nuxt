@@ -36,7 +36,7 @@
        public  routes = [
             {
                 icon: 'speaker_notes',
-                route: '/blog',
+                route: '/blog/ui-ux',
                 title: 'Blog'
             },
             {

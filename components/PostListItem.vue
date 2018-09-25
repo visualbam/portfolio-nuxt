@@ -7,7 +7,7 @@
             <div class="post__content">{{post.summary}}</div>
             <div class="post__actions">
                 <div class="post__action">
-                    <v-btn flat outline :to="`/blog/${post.id}`">view post</v-btn>
+                    <v-btn flat outline :to="`/blog/${$route.params.category}/${post.id}`">view post</v-btn>
                 </div>
             </div>
     </div>
