@@ -1,73 +1,42 @@
 <template>
     <div class="post-list">
-        <div class="post">
-            <div class="post__meta">
-                <span class="post__category">Design</span> - <span class="post__date">January 5th, 2018</span>
-            </div>
-            <h2 class="post__headline">5 Common Portfolio Mistakes and How to Fix Them</h2>
-            <div class="post__content">Every week users submit a lot of interesting stuff on our sister site Webdesigner News, highlighting great content from around the web that can be of interest to web designers. The best way to keep track of all the great stories..</div>
-            <div class="post__actions">
-                <div class="post__action">
-                    <v-btn flat outline :to="`/blog/${4}`">view post</v-btn>
-                </div>
-            </div>
-        </div>
-        <div class="post">
-            <div class="post__meta">
-                <span class="post__category">Design</span> - <span class="post__date">January 5th, 2018</span>
-            </div>
-            <h2 class="post__headline">5 Common Portfolio Mistakes and How to Fix Them</h2>
-            <div class="post__content">Every week users submit a lot of interesting stuff on our sister site Webdesigner News, highlighting great content from around the web that can be of interest to web designers. The best way to keep track of all the great stories..</div>
-            <div class="post__actions">
-                <div class="post__action">
-                    <v-btn flat outline>view post</v-btn>
-                </div>
-            </div>
-        </div>
-        <div class="post">
-            <div class="post__meta">
-                <span class="post__category">Design</span> - <span class="post__date">January 5th, 2018</span>
-            </div>
-            <h2 class="post__headline">5 Common Portfolio Mistakes and How to Fix Them</h2>
-            <div class="post__content">Every week users submit a lot of interesting stuff on our sister site Webdesigner News, highlighting great content from around the web that can be of interest to web designers. The best way to keep track of all the great stories..</div>
-            <div class="post__actions">
-                <div class="post__action">
-                    <v-btn flat outline>view post</v-btn>
-                </div>
-            </div>
-        </div>
-        <div class="post">
-            <div class="post__meta">
-                <span class="post__category">Design</span> - <span class="post__date">January 5th, 2018</span>
-            </div>
-            <h2 class="post__headline">5 Common Portfolio Mistakes and How to Fix Them</h2>
-            <div class="post__content">Every week users submit a lot of interesting stuff on our sister site Webdesigner News, highlighting great content from around the web that can be of interest to web designers. The best way to keep track of all the great stories..</div>
-            <div class="post__actions">
-                <div class="post__action">
-                    <v-btn flat outline>view post</v-btn>
-                </div>
-            </div>
-        </div>
-        <div class="post">
-            <div class="post__meta">
-                <span class="post__category">Design</span> - <span class="post__date">January 5th, 2018</span>
-            </div>
-            <h2 class="post__headline">5 Common Portfolio Mistakes and How to Fix Them</h2>
-            <div class="post__content">Every week users submit a lot of interesting stuff on our sister site Webdesigner News, highlighting great content from around the web that can be of interest to web designers. The best way to keep track of all the great stories..</div>
-            <div class="post__actions">
-                <div class="post__action">
-                    <v-btn flat outline>view post</v-btn>
-                </div>
-            </div>
-        </div>
-</div>
+        <PostListItem v-for="post in posts" :key="post.id" :post="post" />
+    </div>
 </template>
 
 <script lang="ts">
     import { Component, Vue } from "nuxt-property-decorator";
+    import PostListItem from '~/components/PostListItem.vue';
 
-    @Component({})
+    @Component({
+        components: { PostListItem }
+    })
     export default class PostList extends Vue {
-
+        public  posts = [
+            {
+                id: 0,
+                title: '5 Common Portfolio Mistakes and How to Fix Them',
+                summary: 'Every week users submit a lot of interesting stuff on our sister site Webdesigner News, highlighting great content from around the web that can be of interest to web designers. The best way to keep track of all the great stories',
+                meta: { category: 'Design', publishDate: 'January 5th, 2018' }
+            },
+            {
+                id: 1,
+                title: '10 Free Font Alternatives to Gotham',
+                summary: 'Every week users submit a lot of interesting stuff on our sister site Webdesigner News, highlighting great content from around the web that can be of interest to web designers. The best way to keep track of all the great stories',
+                meta: { category: 'Design', publishDate: 'January 5th, 2018' }
+            },
+            {
+                id: 2,
+                title: '4 Web Design Principles Hollywood Reboots Can Teach Us',
+                summary: 'Every week users submit a lot of interesting stuff on our sister site Webdesigner News, highlighting great content from around the web that can be of interest to web designers. The best way to keep track of all the great stories',
+                meta: { category: 'Design', publishDate: 'January 5th, 2018' }
+            },
+            {
+                id: 3,
+                title: '20 Freshest Web Designs, September 2018',
+                summary: 'Every week users submit a lot of interesting stuff on our sister site Webdesigner News, highlighting great content from around the web that can be of interest to web designers. The best way to keep track of all the great stories',
+                meta: { category: 'Design', publishDate: 'January 5th, 2018' }
+            }
+        ];
     }
 </script>
