@@ -21,7 +21,7 @@
                             <div class="post__content">Every week users submit a lot of interesting stuff on our sister site Webdesigner News, highlighting great content from around the web that can be of interest to web designers. The best way to keep track of all the great stories..</div>
                             <div class="post__actions">
                                 <div class="post__action">
-                                    <v-btn flat outline>view post</v-btn>
+                                    <v-btn flat outline :to="`/blog/${4}`">view post</v-btn>
                                 </div>
                             </div>
                         </div>
@@ -85,7 +85,9 @@
 
     @Component({})
     export default class extends Vue {
-
+        // public goToPost({id}) {
+        //     this.$router.push('/blog/' + id);
+        // }
     }
 </script>
 
