@@ -57,7 +57,12 @@ module.exports = {
         "~/assets/css/main.css",
         "~/assets/css/main.styl",
     ],
-    build: {},
+    router: {
+        middleware: 'blogNavigation'
+    },
+    build: {
+        vendor: ['gsap']
+    },
     modules: [
         "@nuxtjs/axios",
         '@nuxtjs/vuetify',

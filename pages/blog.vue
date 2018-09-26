@@ -23,7 +23,10 @@
 
 <script lang="ts">
     import { Component, Vue, Watch } from "nuxt-property-decorator";
-    import {TweenMax, Power2, TimelineLite} from 'gsap/TweenMax';
+    let TweenMax;
+    if (process['browser']) {
+        TweenMax = require("gsap/TweenMax");
+    }
 
     @Component({})
     export default class extends Vue {

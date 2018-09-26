@@ -1,5 +1,7 @@
 <template>
-    <PostList :filter="$route.params.category" />
+        <!--<v-flex md8>-->
+            <PostList :filter="$route.params.category" />
+        <!--</v-flex>-->
 </template>
 
 <script lang="ts">
