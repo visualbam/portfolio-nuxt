@@ -3,7 +3,7 @@
             <div class="post__meta">
                 <span class="post__category">{{post.meta.category}}</span> - <span class="post__date">{{post.meta.publishDate}}</span>
             </div>
-            <h2 class="post__title">{{post.title}}</h2>
+            <h2 class="post__title headline">{{post.title}}</h2>
             <div class="post__content">{{post.summary}}</div>
             <div class="post__actions">
                 <div class="post__action">
