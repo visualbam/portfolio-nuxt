@@ -5,7 +5,7 @@
                 <v-flex xs12 md8 lg6 offset-md2 offset-lg3>
                     <v-toolbar card>
                         <v-toolbar-title>
-                            <img class="logo" @click="goHome" src="~/assets/bam_logo.svg" alt="">
+                            <img class="logo" @click="goHome" src="~/assets/images/bam_logo.svg" alt="">
                         </v-toolbar-title>
                         <v-spacer></v-spacer>
                         <v-toolbar-items>

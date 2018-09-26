@@ -91,8 +91,8 @@
 
         public companies = [
             {
-                icon: require('~/assets/fi360-icon.svg'),
-                logo: require('~/assets/fi360-logo.svg'),
+                icon: require('~/assets/images/fi360-icon.svg'),
+                logo: require('~/assets/images/fi360-logo.svg'),
                 name: 'Fi360',
                 position: 'Software Engineer',
                 url: 'https://www.fi360.com/',
@@ -100,8 +100,8 @@
                 endDate: 'Present'
             },
             {
-                icon: require('~/assets/bvhllc-icon.svg'),
-                logo: require('~/assets/bvhllc-logo.svg'),
+                icon: require('~/assets/images/bvhllc-icon.svg'),
+                logo: require('~/assets/images/bvhllc-logo.svg'),
                 name: 'Berryville Holdings, LLC',
                 position: 'Software Engineer',
                 url: 'http://bvhllc.com/',
@@ -109,8 +109,8 @@
                 endDate: 'November 2017'
             },
             {
-                icon: require('~/assets/acatar-icon.svg'),
-                logo: require('~/assets/acatar-logo.svg'),
+                icon: require('~/assets/images/acatar-icon.svg'),
+                logo: require('~/assets/images/acatar-logo.svg'),
                 name: 'Acatar',
                 position: 'Software Engineer',
                 url: 'https://www.learninghouse.com/',
@@ -118,8 +118,8 @@
                 endDate: 'January 2016'
             },
             {
-                icon: require('~/assets/bb-icon.svg'),
-                logo: require('~/assets/bb-logo.svg'),
+                icon: require('~/assets/images/bb-icon.svg'),
+                logo: require('~/assets/images/bb-logo.svg'),
                 name: 'Branding Brand',
                 position: 'Frontend Web Developer',
                 url: 'https://www.brandingbrand.com/',
@@ -127,8 +127,8 @@
                 endDate: 'August 2014'
             },
             {
-                icon: require('~/assets/ppg-icon.svg'),
-                logo: require('~/assets/ppg-logo.svg'),
+                icon: require('~/assets/images/ppg-icon.svg'),
+                logo: require('~/assets/images/ppg-logo.svg'),
                 name: 'PPG Architectural Coatings',
                 position: 'Frontend Web Developer',
                 url: 'http://corporate.ppg.com/Home.aspx',
@@ -136,8 +136,8 @@
                 endDate: 'November 2013'
             },
             {
-                icon: require('~/assets/ptc-icon.svg'),
-                logo: require('~/assets/ptc-logo.svg'),
+                icon: require('~/assets/images/ptc-icon.svg'),
+                logo: require('~/assets/images/ptc-logo.svg'),
                 name: 'Pittsburgh Technical College',
                 position: 'Visual Communications Assistant',
                 url: 'https://www.ptcollege.edu/',
