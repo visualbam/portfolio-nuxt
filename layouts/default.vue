@@ -2,7 +2,7 @@
     <v-app id="inspire">
         <v-toolbar fixed flat app class="navigation">
             <v-layout row>
-                <v-flex xs12 md8 lg6 offset-md2 offset-lg3>
+                <v-flex xs12 md8 lg8 offset-md2 offset-lg2>
                     <v-toolbar card>
                         <v-toolbar-title>
                             <img class="logo" @click="goHome" src="~/assets/bam_logo.svg" alt="">
@@ -18,7 +18,7 @@
         <v-content>
             <v-container fluid fill-height>
                 <v-layout row>
-                    <v-flex xs12 md8 lg6 offset-md2 offset-lg3>
+                    <v-flex xs12 md8 lg8 offset-md4 offset-lg2>
                         <nuxt />
                     </v-flex>
                 </v-layout>

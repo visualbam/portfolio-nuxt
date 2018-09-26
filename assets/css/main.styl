@@ -2,6 +2,14 @@ $primary = #ed5a73;
 $development-color = #F9B967;
 $link-color = #BA6DDB;
 
+.page-enter-active, .page-leave-active {
+    transition: all .25s ease-out;
+}
+.page-enter, .page-leave-active {
+    opacity: 0;
+    transform-origin: 50% 50%;
+}
+
 a {
     text-decoration: none;
 }

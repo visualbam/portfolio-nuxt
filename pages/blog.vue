@@ -3,7 +3,7 @@
         <v-container fluid fill-height>
             <v-layout row wrap>
                 <v-flex>
-                    <transition name="fade" mode="out-in">
+                    <!--<transition name="fade" mode="out-in">-->
                         <div class="blog-header" v-if="!$route.params.post">
                         <h1>Blog Feed {{$route.params.id}}</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mauris urna, laoreet id vestibulum pharetra, aliquet vel diam. Vestibulum ante ipsum primis in faucibus</p>
@@ -13,10 +13,10 @@
                             <v-tab to="/blog/development"> Development </v-tab>
                         </v-tabs>
                     </div>
-                    </transition>
-                    <transition name="fade" mode="out-in">
+                    <!--</transition>-->
+                    <!--<transition name="fade" mode="out-in">-->
                         <nuxt-child />
-                    </transition>
+                    <!--</transition>-->
                 </v-flex>
             </v-layout>
         </v-container>
