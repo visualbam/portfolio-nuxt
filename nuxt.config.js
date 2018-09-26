@@ -65,7 +65,7 @@ module.exports = {
     },
     modules: [
         "@nuxtjs/axios",
-        '@nuxtjs/vuetify',
+        "~/modules/vuetify.js",
         "~/modules/typescript.js"
     ],
     axios: {},

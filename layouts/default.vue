@@ -16,12 +16,8 @@
             </v-layout>
         </v-toolbar>
         <v-content>
-            <v-container fluid fill-height>
-                <v-layout row>
-                    <v-flex xs12 md8 lg6 offset-md2 offset-lg3>
-                        <nuxt />
-                    </v-flex>
-                </v-layout>
+            <v-container fluid  pa-0 ma-0>
+                <nuxt />
             </v-container>
         </v-content>
     </v-app>
@@ -34,7 +30,12 @@
     @Component({})
     export default class extends Vue {
        public  routes = [
-            {
+           {
+               icon: 'speaker_notes',
+               route: '/',
+               title: 'Home'
+           },
+           {
                 icon: 'speaker_notes',
                 route: '/blog',
                 title: 'Blog'

@@ -1,28 +1,25 @@
 <template>
     <div class="blog-page">
-        <v-container fluid fill-height>
-            <v-layout row wrap>
-                <v-flex>
-                        <div class="blog-header" v-if="!$route.params.post" ref="blog-header">
-                            <h1>Blog Feed {{$route.params.id}}</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mauris urna, laoreet id vestibulum pharetra, aliquet vel diam. Vestibulum ante ipsum primis in faucibus</p>
-                            <v-tabs grow slider-color="primary" height="55">
-                                <v-tab to="/blog/ui-ux"> UI/UX </v-tab>
-                                <v-tab to="/blog/design"> Design </v-tab>
-                                <v-tab to="/blog/development"> Development </v-tab>
-                            </v-tabs>
-                        </div>
-                        <div class="content" ref="content">
-                            <nuxt-child />
-                        </div>
-                </v-flex>
-            </v-layout>
-        </v-container>
+        <v-layout row wrap pb-5 pl-4 pr-4>
+            <v-flex xs12 md8 lg6 offset-md2 offset-lg3>
+                <div class="blog-header" v-if="!$route.params.post" ref="blog-header">
+                    <v-tabs grow slider-color="primary" height="55">
+                        <v-tab to="/blog/ui-ux"> UI/UX</v-tab>
+                        <v-tab to="/blog/design"> Design</v-tab>
+                        <v-tab to="/blog/development"> Development</v-tab>
+                    </v-tabs>
+                </div>
+                <div class="content" ref="content">
+                    <nuxt-child/>
+                </div>
+            </v-flex>
+        </v-layout>
     </div>
 </template>
 
 <script lang="ts">
     import { Component, Vue, Watch } from "nuxt-property-decorator";
+
     let TweenMax;
     if (process['browser']) {
         TweenMax = require("gsap/TweenMax");
