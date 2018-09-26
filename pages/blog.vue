@@ -3,20 +3,18 @@
         <v-container fluid fill-height>
             <v-layout row wrap>
                 <v-flex>
-                    <!--<transition name="fade" mode="out-in">-->
-                        <div class="blog-header" v-if="!$route.params.post">
-                        <h1>Blog Feed {{$route.params.id}}</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mauris urna, laoreet id vestibulum pharetra, aliquet vel diam. Vestibulum ante ipsum primis in faucibus</p>
-                        <v-tabs grow slider-color="primary" height="55">
-                            <v-tab to="/blog/ui-ux"> UI/UX </v-tab>
-                            <v-tab to="/blog/design"> Design </v-tab>
-                            <v-tab to="/blog/development"> Development </v-tab>
-                        </v-tabs>
-                    </div>
-                    <!--</transition>-->
-                    <!--<transition name="fade" mode="out-in">-->
-                        <nuxt-child />
-                    <!--</transition>-->
+                        <div class="blog-header" v-if="!$route.params.post" ref="blog-header">
+                            <h1>Blog Feed {{$route.params.id}}</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mauris urna, laoreet id vestibulum pharetra, aliquet vel diam. Vestibulum ante ipsum primis in faucibus</p>
+                            <v-tabs grow slider-color="primary" height="55">
+                                <v-tab to="/blog/ui-ux"> UI/UX </v-tab>
+                                <v-tab to="/blog/design"> Design </v-tab>
+                                <v-tab to="/blog/development"> Development </v-tab>
+                            </v-tabs>
+                        </div>
+                        <div class="content" ref="content">
+                            <nuxt-child />
+                        </div>
                 </v-flex>
             </v-layout>
         </v-container>
@@ -25,6 +23,7 @@
 
 <script lang="ts">
     import { Component, Vue, Watch } from "nuxt-property-decorator";
+    import {TweenMax, Power2, TimelineLite} from 'gsap/TweenMax';
 
     @Component({})
     export default class extends Vue {
@@ -32,6 +31,21 @@
         // onUrlChange(newVal: any) {
         //     // Some action
         // }
+
+        mounted() {
+            // TweenMax.to(this.$refs['blog-header'], 1, {
+            //     opacity: 1
+            // });
+            // fade.add();
+            // console.log();
+            // fade.set(this.$refs['blog-header'], {
+            //     opacity: 0
+            // });
+            // fade.to(this.$refs['blog-header'], 2, {
+            //     opacity: 1
+            // });
+        }
+
     }
 </script>
 
@@ -39,15 +53,8 @@
     .blog-page {
         position: relative;
     }
-    .fade-enter-active,
-    .fade-leave-active {
-        transition-duration: 0.3s;
-        transition-property: opacity;
-        transition-timing-function: ease-in-out;
-    }
 
-    .fade-enter,
-    .fade-leave-active {
-        opacity: 0
+    .blog-header {
+        /*opacity: 0;*/
     }
 </style>
