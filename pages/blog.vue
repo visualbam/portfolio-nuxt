@@ -1,7 +1,7 @@
 <template>
     <div class="blog-page">
-        <v-layout row wrap pb-5 pl-4 pr-4>
-            <v-flex xs12 md8 lg6 offset-md2 offset-lg3>
+        <v-layout row wrap>
+            <v-flex>
                 <div class="blog-header" v-if="!$route.params.post" ref="blog-header">
                     <v-tabs grow slider-color="primary" height="55">
                         <v-tab to="/blog/ui-ux"> UI/UX</v-tab>

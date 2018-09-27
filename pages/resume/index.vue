@@ -1,16 +1,16 @@
 <template>
     <div class="resume-page">
-        <v-layout row wrap justify-center pt-5 pb-5 pl-4 pr-4 >
-            <v-flex xs12 md8 lg6>
-                <h1>Bruce McElroy</h1>
+        <v-layout row wrap py-5>
+            <v-flex>
+                <h1 class="headline">Bruce McElroy</h1>
                 <span class="grey--text"><strong>Software Engineer</strong> - Greater Pittsburgh Area </span><br><br>
                 <p>I am a front end developer by day... and a front end developer by night. I continue working on personal projects after "work" hours. I strive to be challenged and I am very self motivated. My goal is to be an asset to your company and wear multiple hats to help streamline projects. Currently I'm deep diving into Javascript and exploring design patterns. I'm also a proficient designer with a focus on UI/UX.</p>
             </v-flex>
         </v-layout>
 
-        <v-layout row wrap justify-center pb-5 pl-4 pr-4>
+        <v-layout row wrap pb-5>
             <v-flex xs12 md6>
-                <h2>Work Experience</h2>
+                <h2 class="title">Work Experience</h2>
                 <v-list three-line>
                     <template>
                         <div v-for="company in companies" :key="company.name">
@@ -37,34 +37,31 @@
                     </template>
                 </v-list>
             </v-flex>
-
-        </v-layout>
-        <v-layout row wrap justify-center pb-5 pl-4 pr-4>
             <v-flex xs12 md6>
-            <h2>Education</h2>
-            <v-list three-line>
-                <template>
-                    <div v-for="school in schools" :key="school.name">
-                        <v-subheader>{{school.degree}}</v-subheader>
-                        <v-divider></v-divider>
-                        <v-list-tile>
-                            <v-list-tile-content>
-                                <v-list-tile-title>{{school.name}}</v-list-tile-title>
-                                <v-list-tile-sub-title>{{school.startDate}} - {{school.endDate}}
-                                </v-list-tile-sub-title>
-                            </v-list-tile-content>
-                            <v-list-tile-action>
-                                <a v-if="school.url" :href="school.url" target="_blank">
-                                    <v-btn flat icon color="primary">
-                                        <v-icon>link</v-icon>
-                                    </v-btn>
-                                </a>
-                            </v-list-tile-action>
-                        </v-list-tile>
-                    </div>
-                </template>
-            </v-list>
-        </v-flex>
+                <h2 class="title">Education</h2>
+                <v-list three-line>
+                    <template>
+                        <div v-for="school in schools" :key="school.name">
+                            <v-subheader>{{school.degree}}</v-subheader>
+                            <v-divider></v-divider>
+                            <v-list-tile>
+                                <v-list-tile-content>
+                                    <v-list-tile-title>{{school.name}}</v-list-tile-title>
+                                    <v-list-tile-sub-title>{{school.startDate}} - {{school.endDate}}
+                                    </v-list-tile-sub-title>
+                                </v-list-tile-content>
+                                <v-list-tile-action>
+                                    <a v-if="school.url" :href="school.url" target="_blank">
+                                        <v-btn flat icon color="primary">
+                                            <v-icon>link</v-icon>
+                                        </v-btn>
+                                    </a>
+                                </v-list-tile-action>
+                            </v-list-tile>
+                        </div>
+                    </template>
+                </v-list>
+            </v-flex>
         </v-layout>
     </div>
 </template>

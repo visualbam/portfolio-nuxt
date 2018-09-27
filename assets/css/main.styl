@@ -1,6 +1,4 @@
-$primary = #ed5a73;
-$development-color = #F9B967;
-$link-color = #BA6DDB;
+@import './variables.styl';
 
 .page-enter-active, .page-leave-active {
     transition: all .25s ease-out;
@@ -13,6 +11,14 @@ $link-color = #BA6DDB;
 a {
     text-decoration: none;
 }
+
+hr {
+    border: 1px solid lighten($primary, 70%);
+}
+
+//.social-icons {
+//    margin-top: 1.5rem;
+//}
 
 .logo {
     width: 100px;
@@ -102,5 +108,11 @@ nav.v-toolbar {
 
     &__meta {
         font-size: 12px;
+    }
+}
+
+.intro-section {
+    h1, h2 {
+        color: $primary;
     }
 }
