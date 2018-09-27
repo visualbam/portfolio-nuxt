@@ -4,9 +4,8 @@
             <v-flex>
                 <h1 class="display-1">Bruce Aaron McElroy</h1>
                 <span class="grey--text"><strong>Designer, Full Stack Developer & Mentor</strong> - Greater Pittsburgh Area </span><br><br>
-                <p class="body-2">I am a front end developer by day... and a front end developer by night. I continue
-                    working on
-                    personal projects after "work" hours. I strive to be challenged and I am very self motivated. </p>
+                <p class="headline">I am a full stack developer by day... and a full stack developer by night. I continue
+                    working on personal projects after "work" hours. I strive to be challenged and I am very self motivated. </p>
 
                 <!--<p class="body-1">My goal is to be an asset to your company and wear multiple hats to help streamline projects. Currently-->
                     <!--I'm deep diving into Javascript and exploring design patterns. I'm also a proficient designer with a-->
@@ -14,11 +13,6 @@
 
                 <!--<h1 class="subheading">I design, prototype and iterate to create applications that are beautiful and-->
                 <!--solve problems.</h1>-->
-
-                <!--<p class="body-1">As a software engineer, I enjoy bridging the gap between engineering and design —-->
-                <!--combining my technical knowledge with my keen eye for design to create a beautiful product. My-->
-                <!--goal is to always build applications that are scalable and efficient under the hood while-->
-                <!--providing engaging, pixel-perfect user experiences.</p>-->
 
                 <div class="social-icons">
                     <v-btn flat icon color="primary">
@@ -39,7 +33,19 @@
                 </div>
             </v-flex>
         </v-layout>
-        <v-layout row wrap pb-5>
+
+        <v-layout row wrap py-5 my-5>
+            <v-flex>
+                <h2 class="title">Software Development</h2>
+                <br>
+                <p class="body-1">As a software engineer, I enjoy bridging the gap between engineering and design —
+                combining my technical knowledge with my keen eye for design to create a beautiful product. My
+                goal is to always build applications that are scalable and efficient under the hood while
+                providing engaging, pixel-perfect user experiences.</p>
+            </v-flex>
+        </v-layout>
+
+        <v-layout row wrap py-5>
             <v-flex xs12 md6>
                 <h2 class="title">Work Experience</h2>
                 <v-list three-line>

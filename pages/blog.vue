@@ -1,6 +1,6 @@
 <template>
     <div class="blog-page">
-        <v-layout row wrap>
+        <v-layout row wrap pb-5>
             <v-flex>
                 <div class="blog-header" v-if="!$route.params.post" ref="blog-header">
                     <v-tabs grow slider-color="primary" height="55">
