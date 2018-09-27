@@ -71,7 +71,9 @@ module.exports = {
     axios: {},
     vuetify: {
        theme: {
-           primary: '#ed5a73'
+           primary: '#ed5a73',
+           secondary: '#151030',
+           accent: '#F9B967'
        }
     },
 };

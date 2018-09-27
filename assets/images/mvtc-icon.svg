@@ -5,8 +5,11 @@
         <g transform="matrix(1.49463,0,0,1.49463,211.639,27.9257)">
             <rect x="7" y="6" width="21.41" height="21.41" style="fill:rgb(157,157,157);"/>
         </g>
-        <g transform="matrix(0.852592,0,0,0.852592,227.108,56.6201)">
-            <text x="0px" y="0px" style="font-family:'Lato-Black', 'Lato', sans-serif;font-weight:900;font-size:12px;fill:white;">BVH</text>
+        <g transform="matrix(0.646496,0,0,0.636974,226.643,55.6776)">
+            <text x="0px" y="0px" style="font-family:'Lato-Black', 'Lato', sans-serif;font-weight:900;font-size:12px;fill:white;">MVT</text>
+            <g transform="matrix(1,0,0,1,26.94,0)">
+                <text x="0px" y="0px" style="font-family:'Lato-Black', 'Lato', sans-serif;font-weight:900;font-size:12px;fill:white;">C</text>
+            </g>
         </g>
     </g>
 </svg>

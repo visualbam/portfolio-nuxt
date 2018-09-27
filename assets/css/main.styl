@@ -1,24 +1,33 @@
 @import './variables.styl';
 
-//.page-enter-active, .page-leave-active {
-//    transition: all .25s ease-out;
-//}
-//.page-enter, .page-leave-active {
-//    opacity: 0;
-//    transform-origin: 50% 50%;
-//}
+.page-enter-active, .page-leave-active {
+    transition: all .25s ease-out;
+}
+.page-enter, .page-leave-active {
+    opacity: 0;
+    transform-origin: 50% 50%;
+}
 
 a {
     text-decoration: none;
 }
 
+.ba-0 {
+    border: none!important;
+}
+
+.br-1 {
+    border-right: 1px solid #efefef;
+}
+
+.full-width {
+    width: 100%;
+    display: block;
+}
+
 hr {
     border: 1px solid lighten($primary, 70%);
 }
-
-//.social-icons {
-//    margin-top: 1.5rem;
-//}
 
 .logo {
     width: 100px;
@@ -48,6 +57,26 @@ hr {
     // this is fixed so that it's removed from the content to align the nav in the middle correctly
     position: fixed;
     left: 15px;
+}
+
+.intro {
+    color: white;
+    background: $secondary;
+    background-image: url("../images/nav-bg.svg") no-repeat;
+    background-image: url("../images/cloud-bg.svg");
+    background-size: 100% 100%;
+    //background-position: center top;
+    padding-bottom: 4rem;
+}
+
+.companies {
+    color: white;
+    background: $secondary;
+    background-image: url("../images/nav-bg.svg") no-repeat;
+    background-image: url("../images/logo-bg.svg");
+    background-size: 100% 100%;
+    //background-position: center top;
+    padding-bottom: 4rem;
 }
 
 nav.v-toolbar {

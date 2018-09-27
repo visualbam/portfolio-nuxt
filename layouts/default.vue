@@ -3,7 +3,7 @@
         <v-toolbar fixed flat app class="navigation">
             <v-container grid-list-md pa-0>
                 <v-layout row wrap justify-center pa-0>
-                    <v-flex xl6 lg9 md11 sm10 xs10>
+                    <v-flex xs11 sm11 xl6 lg9 md11 sm10 xs10>
                         <v-toolbar card>
                             <v-toolbar-title>
                                 <img class="logo" @click="goHome" src="~/assets/images/bam_logo.svg" alt="">
@@ -18,29 +18,10 @@
                     </v-flex>
                 </v-layout>
             </v-container>
-
         </v-toolbar>
-
         <v-content>
-            <v-container grid-list-md pa-0>
-                <v-layout row wrap justify-center>
-                    <v-flex xl6 lg9 md11 sm10 xs10>
-                        <nuxt-child/>
-                    </v-flex>
-                </v-layout>
-            </v-container>
+            <nuxt-child/>
         </v-content>
-
-        <!--<v-content>-->
-        <!--<v-container fluid  pa-0 ma-0>-->
-        <!--<v-layout row wrap>-->
-        <!--<v-flex xs12>-->
-        <!--<nuxt />-->
-        <!--</v-flex>-->
-        <!--</v-layout>-->
-        <!--</v-container>-->
-        <!--</v-content>-->
-
     </v-app>
 </template>
 
@@ -56,16 +37,16 @@
                 route: '/',
                 title: 'Resume'
             },
-            {
-                icon: 'favorite',
-                route: '/portfolio',
-                title: 'Portfolio'
-            },
-            {
-                icon: 'speaker_notes',
-                route: '/blog',
-                title: 'Blog'
-            }
+            // {
+            //     icon: 'favorite',
+            //     route: '/portfolio',
+            //     title: 'Portfolio'
+            // },
+            // {
+            //     icon: 'speaker_notes',
+            //     route: '/blog',
+            //     title: 'Blog'
+            // }
         ];
 
         public goHome() {
