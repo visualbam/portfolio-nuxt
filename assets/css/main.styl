@@ -56,8 +56,11 @@ nav.v-toolbar {
         background: #151030;
         background-image: url("../images/nav-bg.svg") no-repeat;
         background-image: url("../images/nav-bg.svg") , linear-gradient(0.25turn, #151030, $primary)!important;
-
         background-size: cover;
+
+        .v-toolbar__title {
+            left: 0;
+        }
 
         .v-toolbar__content {
             padding: 0;
