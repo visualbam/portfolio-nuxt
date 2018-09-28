@@ -43,6 +43,7 @@ module.exports = function (moduleOptions) {
     // Register plugin
     this.addPlugin({
         src: path.resolve(__dirname, 'plugin.js'),
+        ssr: true,
         fileName: 'vuetify.js',
         options: {
             vuetifyOptions
