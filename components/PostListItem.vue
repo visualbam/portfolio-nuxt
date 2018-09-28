@@ -1,15 +1,24 @@
 <template>
-    <div class="post">
-            <div class="post__meta">
-                <span class="post__category">{{post.meta.category}}</span> - <span class="post__date">{{post.meta.publishDate}}</span>
-            </div>
-            <h2 class="post__title headline">{{post.title}}</h2>
-            <div class="post__content">{{post.summary}}</div>
-            <div class="post__actions">
-                <div class="post__action">
-                    <v-btn flat outline :to="`/blog/${$route.params.category}/${post.id}`">view post</v-btn>
+    <div class="post-list-item">
+        <v-flex py-4>
+            <nuxt-link :to="`/blog/${$route.params.category}/${post.id}`">
+                <div class="post-list-item__meta">
+                    <span class="post-list-item__category">{{post.meta.category}}</span> - <span
+                        class="post-list-item__date">{{post.meta.publishDate}}</span>
                 </div>
-            </div>
+                <h2 class="post-list-item__title headline">
+                    {{post.title}}
+                </h2>
+                <div class="post-list-item__content">{{post.summary}}</div>
+                <div class="post-list-item__actions">
+                    <div class="post-list-item__action">
+                        <v-btn flat outline color="primary" :to="`/blog/${$route.params.category}/${post.id}`">
+                            view post
+                        </v-btn>
+                    </div>
+                </div>
+            </nuxt-link>
+        </v-flex>
     </div>
 </template>
 
@@ -18,6 +27,7 @@
 
     @Component({})
     export default class PostListItem extends Vue {
-        @Prop({ required: true }) post;
+        @Prop({required: true}) post;
     }
 </script>
+

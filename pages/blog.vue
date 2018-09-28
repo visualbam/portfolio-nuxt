@@ -54,13 +54,3 @@
 
     }
 </script>
-
-<style scoped lang="styl">
-    .blog-page {
-        position: relative;
-    }
-
-    .blog-header {
-        /*opacity: 0;*/
-    }
-</style>

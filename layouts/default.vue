@@ -42,11 +42,11 @@
             //     route: '/portfolio',
             //     title: 'Portfolio'
             // },
-            // {
-            //     icon: 'speaker_notes',
-            //     route: '/blog',
-            //     title: 'Blog'
-            // }
+            {
+                icon: 'speaker_notes',
+                route: '/blog',
+                title: 'Blog'
+            }
         ];
 
         public goHome() {

@@ -17,28 +17,28 @@
         public items = [
             {
                 id: 0,
-                title: '5 Common Portfolio Mistakes and How to Fix Them',
-                summary: 'Every week users submit a lot of interesting stuff on our sister site Webdesigner News, highlighting great content from around the web that can be of interest to web designers. The best way to keep track of all the great stories',
-                meta: { category: 'design', publishDate: 'January 5th, 2018' }
+                title: 'My first design post!',
+                summary: 'Unfortunately, this is a work in progress and there is no real content for you to read here. I apologize for the inconvenience. Feel free to shoot me an email in the mean time if you have any questions!',
+                meta: { category: 'design', publishDate: 'September 28th, 2018' }
             },
             {
                 id: 1,
-                title: '10 Free Font Alternatives to Gotham',
-                summary: 'Every week users submit a lot of interesting stuff on our sister site Webdesigner News, highlighting great content from around the web that can be of interest to web designers. The best way to keep track of all the great stories',
-                meta: { category: 'development', publishDate: 'January 5th, 2018' }
+                title: 'My first development post!',
+                summary: 'Unfortunately, this is a work in progress and there is no real content for you to read here. I apologize for the inconvenience. Feel free to shoot me an email in the mean time if you have any questions!',
+                meta: { category: 'development', publishDate: 'September 28th, 2018' }
             },
-            {
-                id: 2,
-                title: '4 Web Design Principles Hollywood Reboots Can Teach Us',
-                summary: 'Every week users submit a lot of interesting stuff on our sister site Webdesigner News, highlighting great content from around the web that can be of interest to web designers. The best way to keep track of all the great stories',
-                meta: { category: 'design', publishDate: 'January 5th, 2018' }
-            },
-            {
-                id: 3,
-                title: '20 Freshest Web Designs, September 2018',
-                summary: 'Every week users submit a lot of interesting stuff on our sister site Webdesigner News, highlighting great content from around the web that can be of interest to web designers. The best way to keep track of all the great stories',
-                meta: { category: 'design', publishDate: 'January 5th, 2018' }
-            }
+            // {
+            //     id: 2,
+            //     title: '4 Web Design Principles Hollywood Reboots Can Teach Us',
+            //     summary: 'Every week users submit a lot of interesting stuff on our sister site Webdesigner News, highlighting great content from around the web that can be of interest to web designers. The best way to keep track of all the great stories',
+            //     meta: { category: 'design', publishDate: 'January 5th, 2018' }
+            // },
+            // {
+            //     id: 3,
+            //     title: '20 Freshest Web Designs, September 2018',
+            //     summary: 'Every week users submit a lot of interesting stuff on our sister site Webdesigner News, highlighting great content from around the web that can be of interest to web designers. The best way to keep track of all the great stories',
+            //     meta: { category: 'design', publishDate: 'January 5th, 2018' }
+            // }
         ];
 
         get posts() {

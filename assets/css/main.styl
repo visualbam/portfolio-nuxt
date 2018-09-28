@@ -109,39 +109,56 @@ nav.v-toolbar {
 
 .blog-page {
     .v-tabs {
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
         border-bottom: 1px solid #ccc;
     }
 }
 
-.post {
-    border-left: 3px solid $primary;
-    padding-left: 1rem;
-
-    &:not(:last-child) {
-        margin-bottom: 4rem;
-    }
-
-    &__headline {
+.post-list-item {
+    &__title {
         line-height: 1.25;
         margin-bottom: 1rem;
     }
-
     &__category {
         text-transform: uppercase;
         font-weight: bold;
     }
-
     &__content {
         color: #7D7D7D;
         font-size: 1.2rem;
         margin-bottom: 1rem;
     }
-
     &__meta {
         font-size: 12px;
+        color: $secondary;
     }
 }
+
+
+.post-detail {
+    &__title {
+        line-height: 1.25;
+        margin-bottom: 1rem;
+        color: $primary;
+    }
+    &__category {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    &__content {
+        color: #7D7D7D;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    &__meta {
+        font-size: 12px;
+        color: $secondary;
+    }
+    &__action {
+        margin-top: 10rem!important;
+    }
+}
+
 
 .intro-section {
     h1, h2 {
