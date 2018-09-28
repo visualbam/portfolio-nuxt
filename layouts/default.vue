@@ -20,7 +20,7 @@
             </v-container>
         </v-toolbar>
         <v-content>
-            <nuxt-child/>
+            <nuxt />
         </v-content>
     </v-app>
 </template>
@@ -37,16 +37,16 @@
                 route: '/',
                 title: 'Resume'
             },
-            // {
-            //     icon: 'favorite',
-            //     route: '/portfolio',
-            //     title: 'Portfolio'
-            // },
-            // {
-            //     icon: 'speaker_notes',
-            //     route: '/blog',
-            //     title: 'Blog'
-            // }
+            {
+                icon: 'favorite',
+                route: '/portfolio',
+                title: 'Portfolio'
+            },
+            {
+                icon: 'speaker_notes',
+                route: '/blog',
+                title: 'Blog'
+            }
         ];
 
         public goHome() {

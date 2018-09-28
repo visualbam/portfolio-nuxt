@@ -13,7 +13,7 @@
                                 </v-tabs>
                             </div>
                             <div class="content" ref="content">
-                                <nuxt-child/>
+                                <nuxt-child />
                             </div>
                         </v-flex>
                     </v-layout>

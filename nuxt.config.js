@@ -60,9 +60,6 @@ module.exports = {
     router: {
         middleware: 'blogNavigation'
     },
-    build: {
-        vendor: ['gsap']
-    },
     modules: [
         "@nuxtjs/axios",
         "~/modules/vuetify.js",
