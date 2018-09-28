@@ -1,7 +1,7 @@
 <template>
     <div class="home-page">
         <section class="intro">
-            <v-container grid-list-md pa-0>
+            <v-container pa-0>
                 <v-layout row wrap justify-center>
                     <v-flex xl4 lg6 md8 sm9 xs11 py-5 my-5 text-xs-center>
                         <h1 class="display-1">Bruce McElroy</h1>
@@ -46,7 +46,7 @@
             </v-container>
         </section>
         <section class="skills">
-            <v-container grid-list-md pa-0>
+            <v-container pa-0>
                 <v-layout row wrap justify-center>
                     <v-flex xl6 lg9 md11 sm10 xs10 my-5 class="inset-container">
                         <v-layout row wrap class="text-xs-center">
@@ -166,7 +166,7 @@
             </v-container>
         </section>
         <section class="companies">
-            <v-container grid-list-md pa-0>
+            <v-container pa-0>
                 <v-layout row wrap justify-center>
                     <v-flex xl4 lg6 md8 sm8 xs10 py-5 my-5 text-xs-center>
                         <h1 class="display-1">I'm proud to have collaborated</h1>
@@ -178,7 +178,7 @@
             </v-container>
         </section>
         <section class="experience">
-            <v-container grid-list-md pa-0>
+            <v-container pa-0>
                 <v-layout row wrap justify-center class="text-xs-center">
                     <v-flex xl6 lg9 md11 sm10 xs12 px-4 py-5 my-5 class="inset-container">
                         <v-layout row wrap>

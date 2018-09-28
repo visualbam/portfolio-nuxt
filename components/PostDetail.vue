@@ -1,6 +1,6 @@
 <template>
     <div class="post-detail">
-        <v-flex py-4>
+        <v-flex py-3>
                 <div class="post-detail__meta">
                     <span class="post-detail__category">{{post.meta.category}}</span> - <span
                         class="post-detail__date">{{post.meta.publishDate}}</span>

@@ -1,9 +1,9 @@
 <template>
     <v-app id="inspire">
         <v-toolbar fixed flat app class="navigation">
-            <v-container grid-list-md pa-0>
+            <v-container :fluid="$vuetify.breakpoint.xsOnly" pa-0>
                 <v-layout row wrap justify-center pa-0>
-                    <v-flex xl6 lg9 md11 sm10 xs10>
+                    <v-flex xl6 lg9 md11 sm10 xs12 :pl-4="$vuetify.breakpoint.xsOnly">
                         <v-toolbar card>
                             <v-toolbar-title>
                                 <img class="logo" @click="goHome" src="~/assets/images/bam_logo.svg" alt="">
