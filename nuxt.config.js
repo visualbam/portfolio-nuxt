@@ -60,6 +60,9 @@ module.exports = {
     router: {
         middleware: 'blogNavigation'
     },
+    plugins: [
+        "~/plugins/breakpoint.js"
+    ],
     modules: [
         "@nuxtjs/axios",
         "~/modules/vuetify.js",
