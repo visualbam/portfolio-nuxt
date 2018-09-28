@@ -5,7 +5,8 @@
                 <v-layout row wrap justify-center>
                     <v-flex xl4 lg6 md8 sm9 xs11 py-5 my-5 text-xs-center>
                         <h1 class="display-1">Bruce McElroy</h1>
-                        <span class="accent--text headline">Designer, Full Stack Developer  <br v-if="$vuetify.breakpoint.xsOnly"> & Mentor </span>
+                        <span class="accent--text headline">Designer, Full Stack Developer  <br
+                                v-if="breakpoint.xsOnly"> & Mentor </span>
                         <br>
                         <br>
                         <p class="subheading text--white">I enjoy bridging the gap between
@@ -14,33 +15,31 @@
                             product. </p>
 
                         <div class="social-icons">
-                            <a href="https://gitlab.com/visualbam" target="_blank">
-                                <v-btn flat icon color="primary">
+                            <v-btn flat icon color="primary">
+                                <a href="https://gitlab.com/visualbam" target="_blank">
                                     <v-icon dark>fab fa-gitlab</v-icon>
-                                </v-btn>
-                            </a>
-
-                            <a href="http://codepen.io/visualbam" target="_blank">
-                                <v-btn flat icon color="primary">
+                                </a>
+                            </v-btn>
+                            <v-btn flat icon color="primary">
+                                <a href="http://codepen.io/visualbam" target="_blank">
                                     <v-icon dark>fab fa-codepen</v-icon>
-                                </v-btn>
-                            </a>
-
-                            <a href="https://www.facebook.com/bruce.a.mcelroy" target="_blank">
-                                <v-btn flat icon color="primary">
+                                </a>
+                            </v-btn>
+                            <v-btn flat icon color="primary">
+                                <a href="https://www.facebook.com/bruce.a.mcelroy" target="_blank">
                                     <v-icon dark>fab fa-facebook-f</v-icon>
-                                </v-btn>
-                            </a>
-                            <a href="https://dribbble.com/visualbam" target="_blank">
-                                <v-btn flat icon color="primary">
+                                </a>
+                            </v-btn>
+                            <v-btn flat icon color="primary">
+                                <a href="https://dribbble.com/visualbam" target="_blank">
                                     <v-icon dark>fab fa-dribbble</v-icon>
-                                </v-btn>
-                            </a>
-                            <a href="https://www.linkedin.com/in/brucemcelroy/" target="_blank">
-                                <v-btn flat icon color="primary">
+                                </a>
+                            </v-btn>
+                            <v-btn flat icon color="primary">
+                                <a href="https://www.linkedin.com/in/brucemcelroy/" target="_blank">
                                     <v-icon dark>fab fa-linkedin-in</v-icon>
-                                </v-btn>
-                            </a>
+                                </a>
+                            </v-btn>
                         </div>
                     </v-flex>
                 </v-layout>
@@ -49,10 +48,10 @@
         <section class="skills">
             <v-container grid-list-md pa-0>
                 <v-layout row wrap justify-center>
-                    <v-flex xl6 lg9 md11 sm10 xs10 py-5 my-5 class="inset-container">
+                    <v-flex xl6 lg9 md11 sm10 xs10 my-5 class="inset-container">
                         <v-layout row wrap class="text-xs-center">
-                            <v-flex xs12 sm6 md6 px-4 py-4 class="br-1" :class="{ 'ba-0': $vuetify.breakpoint.xsOnly }">
-                                <v-icon large color="accent">wb_sunny</v-icon>
+                            <v-flex xs12 sm6 md6 px-4 py-5 class="br-1" :class="{ 'ba-0': breakpoint.xsOnly }">
+                                <v-icon x-large color="accent">wb_sunny</v-icon>
                                 <br><br>
                                 <h2 class="title">Designer</h2>
                                 <br>
@@ -64,7 +63,6 @@
                                 <br>
                                 <v-chip outline>Apps</v-chip>
                                 <v-chip outline>Logos</v-chip>
-                                <br v-if="$vuetify.breakpoint.xsOnly">
                                 <v-chip outline>UI/UX</v-chip>
                                 <v-chip outline>Web</v-chip>
                                 <br><br>
@@ -80,17 +78,20 @@
                                         </v-list-tile>
                                         <v-list-tile @click="">
                                             <v-list-tile-content>
-                                                <v-list-tile-title class="text-xs-center">Affinity Designer</v-list-tile-title>
+                                                <v-list-tile-title class="text-xs-center">Affinity Designer
+                                                </v-list-tile-title>
                                             </v-list-tile-content>
                                         </v-list-tile>
                                         <v-list-tile @click="">
                                             <v-list-tile-content>
-                                                <v-list-tile-title class="text-xs-center">Affinity Photo </v-list-tile-title>
+                                                <v-list-tile-title class="text-xs-center">Affinity Photo
+                                                </v-list-tile-title>
                                             </v-list-tile-content>
                                         </v-list-tile>
                                         <v-list-tile @click="">
                                             <v-list-tile-content>
-                                                <v-list-tile-title class="text-xs-center">Invision Studio</v-list-tile-title>
+                                                <v-list-tile-title class="text-xs-center">Invision Studio
+                                                </v-list-tile-title>
                                             </v-list-tile-content>
                                         </v-list-tile>
                                         <v-list-tile @click="">
@@ -102,12 +103,12 @@
                                 </v-list>
                             </v-flex>
 
-                            <v-flex v-if="$vuetify.breakpoint.xsOnly">
+                            <v-flex v-if="breakpoint.xsOnly">
                                 <v-divider></v-divider>
                             </v-flex>
 
-                            <v-flex xs12 sm6 md6 px-4 py-4>
-                                <v-icon large color="accent">code</v-icon>
+                            <v-flex xs12 sm6 md6 px-4 py-5>
+                                <v-icon x-large color="accent">code</v-icon>
                                 <br><br>
                                 <h2 class="title">Developer</h2>
                                 <br>
@@ -119,15 +120,14 @@
                                 <br>
                                 <v-chip outline>HTML</v-chip>
                                 <v-chip outline>CSS</v-chip>
-                                <br v-if="$vuetify.breakpoint.xsOnly">
                                 <v-chip outline>Javascript</v-chip>
                                 <v-chip outline>c#</v-chip>
                                 <br><br>
 
                                 <v-list>
+                                    <template>
                                         <h4 :style="{ color: $vuetify.theme.primary}">Development tools</h4>
                                         <br>
-                                        <!--<v-divider></v-divider>-->
                                         <v-list-tile @click="">
                                             <v-list-tile-content>
                                                 <v-list-tile-title class="text-xs-center">Webstorm</v-list-tile-title>
@@ -157,6 +157,7 @@
                                                 <v-list-tile-title class="text-xs-center">Hyper.js</v-list-tile-title>
                                             </v-list-tile-content>
                                         </v-list-tile>
+                                    </template>
                                 </v-list>
                             </v-flex>
                         </v-layout>
@@ -185,26 +186,24 @@
                                 <h2 class="title">Work Experience</h2>
                                 <br>
                                 <v-list three-line>
-                                    <template v-for="company in companies">
-                                            <v-subheader>{{company.position}}</v-subheader>
-                                            <v-divider></v-divider>
-                                            <v-list-tile @click="">
-                                                <v-list-tile-avatar>
-                                                    <img :src="company.icon" alt="">
-                                                </v-list-tile-avatar>
-                                                <v-list-tile-content>
-                                                    <v-list-tile-title>{{company.name}}</v-list-tile-title>
-                                                    <v-list-tile-sub-title>{{company.startDate}} - {{company.endDate}}
-                                                    </v-list-tile-sub-title>
-                                                </v-list-tile-content>
-                                                <v-list-tile-action>
-                                                    <a v-if="company.url" :href="company.url" target="_blank">
-                                                        <v-btn flat icon color="primary">
-                                                            <v-icon>link</v-icon>
-                                                        </v-btn>
-                                                    </a>
-                                                </v-list-tile-action>
-                                            </v-list-tile>
+                                    <template v-for="(company, index) in companies">
+                                        <v-subheader>{{company.position}}</v-subheader>
+                                        <v-divider></v-divider>
+                                        <v-list-tile v-if="company.url" :href="company.url" target="_blank">
+                                            <v-list-tile-avatar>
+                                                <img :src="company.icon" alt="">
+                                            </v-list-tile-avatar>
+                                            <v-list-tile-content>
+                                                <v-list-tile-title>{{company.name}}</v-list-tile-title>
+                                                <v-list-tile-sub-title>{{company.startDate}} - {{company.endDate}}
+                                                </v-list-tile-sub-title>
+                                            </v-list-tile-content>
+                                            <v-list-tile-action>
+                                                    <v-btn flat icon color="primary">
+                                                        <v-icon>link</v-icon>
+                                                    </v-btn>
+                                            </v-list-tile-action>
+                                        </v-list-tile>
                                     </template>
                                 </v-list>
                             </v-flex>
@@ -212,28 +211,24 @@
                                 <h2 class="title">Education</h2>
                                 <br>
                                 <v-list three-line>
-                                    <template>
-                                        <div v-for="school in schools" :key="school.name">
-                                            <v-subheader>{{school.degree}}</v-subheader>
-                                            <v-divider></v-divider>
-                                            <v-list-tile @click="">
-                                                <v-list-tile-avatar>
-                                                    <img :src="school.icon" alt="">
-                                                </v-list-tile-avatar>
-                                                <v-list-tile-content>
-                                                    <v-list-tile-title>{{school.name}}</v-list-tile-title>
-                                                    <v-list-tile-sub-title>{{school.startDate}} - {{school.endDate}}
-                                                    </v-list-tile-sub-title>
-                                                </v-list-tile-content>
-                                                <v-list-tile-action>
-                                                    <a v-if="school.url" :href="school.url" target="_blank">
-                                                        <v-btn flat icon color="primary">
-                                                            <v-icon>link</v-icon>
-                                                        </v-btn>
-                                                    </a>
-                                                </v-list-tile-action>
-                                            </v-list-tile>
-                                        </div>
+                                    <template v-for="(school, index) in schools">
+                                        <v-subheader>{{school.degree}}</v-subheader>
+                                        <v-divider></v-divider>
+                                        <v-list-tile v-if="school.url" :href="school.url" target="_blank">
+                                            <v-list-tile-avatar>
+                                                <img :src="school.icon" alt="">
+                                            </v-list-tile-avatar>
+                                            <v-list-tile-content>
+                                                <v-list-tile-title>{{school.name}}</v-list-tile-title>
+                                                <v-list-tile-sub-title>{{school.startDate}} - {{school.endDate}}
+                                                </v-list-tile-sub-title>
+                                            </v-list-tile-content>
+                                            <v-list-tile-action>
+                                                    <v-btn flat icon color="primary">
+                                                        <v-icon>link</v-icon>
+                                                    </v-btn>
+                                            </v-list-tile-action>
+                                        </v-list-tile>
                                     </template>
                                 </v-list>
                             </v-flex>
@@ -324,6 +319,36 @@
                 endDate: 'November 2013'
             }
         ];
+        public isHydrated: boolean = false;
+
+        get breakpoint() {
+            return this.isHydrated
+                ? this.$vuetify.breakpoint
+                : {
+                    xs: true,
+                    xsOnly: true,
+                    xsAndUp: false,
+                    sm: true,
+                    smOnly: true,
+                    smAndDown: true,
+                    smAndUp: false,
+                    md: false,
+                    mdOnly: false,
+                    mdAndDown: false,
+                    mdAndUp: false,
+                    lg: false,
+                    lgOnly: false,
+                    lgAndDown: false,
+                    lgAndUp: false,
+                    xl: false,
+                    xlOnly: false,
+                    xlAndDown: false
+                }// "empty" $breakpoint object with initial values
+        }
+
+        mounted() {
+            this.isHydrated = true
+        }
     }
 </script>
 
