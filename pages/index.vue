@@ -3,9 +3,10 @@
         <section class="intro">
             <v-container grid-list-md pa-0>
                 <v-layout row wrap justify-center>
-                    <v-flex xl4 lg6 md8 sm8 xs10 py-5 my-5 text-xs-center>
-                        <h1 class="display-1">Bruce Aaron McElroy</h1>
-                        <span class="accent--text headline">Designer, Full Stack Developer & Mentor </span><br>
+                    <v-flex xl4 lg6 md8 sm9 xs11 py-5 my-5 text-xs-center>
+                        <h1 class="display-1">Bruce McElroy</h1>
+                        <span class="accent--text headline">Designer, Full Stack Developer  <br v-if="$vuetify.breakpoint.xsOnly"> & Mentor </span>
+                        <br>
                         <br>
                         <p class="subheading text--white">I enjoy bridging the gap between
                             engineering and design — combining my technical knowledge with my keen eye for design to
@@ -50,7 +51,7 @@
                 <v-layout row wrap justify-center>
                     <v-flex xl6 lg9 md11 sm10 xs10 py-5 my-5 class="inset-container">
                         <v-layout row wrap class="text-xs-center">
-                            <v-flex xs12 sm6 md6 px-4 class="br-1">
+                            <v-flex xs12 sm6 md6 px-4 py-4 class="br-1" :class="{ 'ba-0': $vuetify.breakpoint.xsOnly }">
                                 <v-icon large color="accent">wb_sunny</v-icon>
                                 <br><br>
                                 <h2 class="title">Designer</h2>
@@ -63,6 +64,7 @@
                                 <br>
                                 <v-chip outline>Apps</v-chip>
                                 <v-chip outline>Logos</v-chip>
+                                <br v-if="$vuetify.breakpoint.xsOnly">
                                 <v-chip outline>UI/UX</v-chip>
                                 <v-chip outline>Web</v-chip>
                                 <br><br>
@@ -71,35 +73,27 @@
                                     <template>
                                         <h4 :style="{ color: $vuetify.theme.primary}">Design tools</h4>
                                         <br>
-                                        <!--<v-divider></v-divider>-->
-                                        <v-list-tile>
+                                        <v-list-tile @click="">
                                             <v-list-tile-content>
                                                 <v-list-tile-title class="text-xs-center">Adobe XD</v-list-tile-title>
                                             </v-list-tile-content>
                                         </v-list-tile>
-
-                                        <v-list-tile>
+                                        <v-list-tile @click="">
                                             <v-list-tile-content>
-                                                <v-list-tile-title class="text-xs-center">Affinity Designer
-                                                </v-list-tile-title>
+                                                <v-list-tile-title class="text-xs-center">Affinity Designer</v-list-tile-title>
                                             </v-list-tile-content>
                                         </v-list-tile>
-
-                                        <v-list-tile>
+                                        <v-list-tile @click="">
                                             <v-list-tile-content>
-                                                <v-list-tile-title class="text-xs-center">Affinity Photo
-                                                </v-list-tile-title>
+                                                <v-list-tile-title class="text-xs-center">Affinity Photo </v-list-tile-title>
                                             </v-list-tile-content>
                                         </v-list-tile>
-
-                                        <v-list-tile>
+                                        <v-list-tile @click="">
                                             <v-list-tile-content>
-                                                <v-list-tile-title class="text-xs-center">Invision Studio
-                                                </v-list-tile-title>
+                                                <v-list-tile-title class="text-xs-center">Invision Studio</v-list-tile-title>
                                             </v-list-tile-content>
                                         </v-list-tile>
-
-                                        <v-list-tile>
+                                        <v-list-tile @click="">
                                             <v-list-tile-content>
                                                 <v-list-tile-title class="text-xs-center">Sketch</v-list-tile-title>
                                             </v-list-tile-content>
@@ -108,11 +102,11 @@
                                 </v-list>
                             </v-flex>
 
-                            <!--<v-flex>-->
-                                <!--<v-divider></v-divider>-->
-                            <!--</v-flex>-->
+                            <v-flex v-if="$vuetify.breakpoint.xsOnly">
+                                <v-divider></v-divider>
+                            </v-flex>
 
-                            <v-flex xs12 sm6 md6 px-4>
+                            <v-flex xs12 sm6 md6 px-4 py-4>
                                 <v-icon large color="accent">code</v-icon>
                                 <br><br>
                                 <h2 class="title">Developer</h2>
@@ -125,45 +119,44 @@
                                 <br>
                                 <v-chip outline>HTML</v-chip>
                                 <v-chip outline>CSS</v-chip>
+                                <br v-if="$vuetify.breakpoint.xsOnly">
                                 <v-chip outline>Javascript</v-chip>
                                 <v-chip outline>c#</v-chip>
                                 <br><br>
 
                                 <v-list>
-                                    <template>
                                         <h4 :style="{ color: $vuetify.theme.primary}">Development tools</h4>
                                         <br>
                                         <!--<v-divider></v-divider>-->
-                                        <v-list-tile>
+                                        <v-list-tile @click="">
                                             <v-list-tile-content>
                                                 <v-list-tile-title class="text-xs-center">Webstorm</v-list-tile-title>
                                             </v-list-tile-content>
                                         </v-list-tile>
 
-                                        <v-list-tile>
+                                        <v-list-tile @click="">
                                             <v-list-tile-content>
                                                 <v-list-tile-title class="text-xs-center">Rider</v-list-tile-title>
                                             </v-list-tile-content>
                                         </v-list-tile>
 
-                                        <v-list-tile>
+                                        <v-list-tile @click="">
                                             <v-list-tile-content>
                                                 <v-list-tile-title class="text-xs-center">vscode</v-list-tile-title>
                                             </v-list-tile-content>
                                         </v-list-tile>
 
-                                        <v-list-tile>
+                                        <v-list-tile @click="">
                                             <v-list-tile-content>
                                                 <v-list-tile-title class="text-xs-center">Gitlabs</v-list-tile-title>
                                             </v-list-tile-content>
                                         </v-list-tile>
 
-                                        <v-list-tile>
+                                        <v-list-tile @click="">
                                             <v-list-tile-content>
                                                 <v-list-tile-title class="text-xs-center">Hyper.js</v-list-tile-title>
                                             </v-list-tile-content>
                                         </v-list-tile>
-                                    </template>
                                 </v-list>
                             </v-flex>
                         </v-layout>
@@ -186,7 +179,7 @@
         <section class="experience">
             <v-container grid-list-md pa-0>
                 <v-layout row wrap justify-center class="text-xs-center">
-                    <v-flex xl6 lg9 md11 sm10 xs10 px-4 py-5 my-5 class="inset-container">
+                    <v-flex xl6 lg9 md11 sm10 xs12 px-4 py-5 my-5 class="inset-container">
                         <v-layout row wrap>
                             <v-flex xs12 md6 pa-2>
                                 <h2 class="title">Work Experience</h2>
@@ -195,7 +188,7 @@
                                     <template v-for="company in companies">
                                             <v-subheader>{{company.position}}</v-subheader>
                                             <v-divider></v-divider>
-                                            <v-list-tile>
+                                            <v-list-tile @click="">
                                                 <v-list-tile-avatar>
                                                     <img :src="company.icon" alt="">
                                                 </v-list-tile-avatar>
@@ -223,7 +216,7 @@
                                         <div v-for="school in schools" :key="school.name">
                                             <v-subheader>{{school.degree}}</v-subheader>
                                             <v-divider></v-divider>
-                                            <v-list-tile>
+                                            <v-list-tile @click="">
                                                 <v-list-tile-avatar>
                                                     <img :src="school.icon" alt="">
                                                 </v-list-tile-avatar>
@@ -253,7 +246,7 @@
 </template>
 
 <script lang="ts">
-    import { Component, Vue } from "nuxt-property-decorator";
+    import { Component, Provide, Vue } from "vue-property-decorator";
 
     @Component({})
     export default class extends Vue {
@@ -268,14 +261,13 @@
             },
             {
                 icon: require('~/assets/images/mvtc-icon.svg'),
-                name: 'Mon Valley Career and Technology Center',
+                name: 'Mon Valley Career & Technology Center',
                 degree: 'Multimedia',
                 url: 'https://monvalleyctc.org/',
                 startDate: '2006',
                 endDate: '2008'
             }
         ];
-
         public companies = [
             {
                 icon: require('~/assets/images/fi360-icon.svg'),
