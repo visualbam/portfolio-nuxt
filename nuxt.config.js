@@ -71,7 +71,8 @@ module.exports = {
         }
     },
     plugins: [
-        "~/plugins/breakpoint.js"
+        { src: '~/plugins/breakpoint.js', ssr: true },
+        { src: '~/plugins/ga.js', ssr: false }
     ],
     modules: [
         "@nuxtjs/axios",
