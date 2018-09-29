@@ -65,7 +65,10 @@ module.exports = {
         "~/assets/css/main.styl",
     ],
     router: {
-        middleware: 'blogNavigation'
+        middleware: 'blogNavigation',
+        scrollBehavior: function (to, from, savedPosition) {
+            return { x: 0, y: 0 }
+        }
     },
     plugins: [
         "~/plugins/breakpoint.js"

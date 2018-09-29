@@ -1,6 +1,6 @@
 <template>
     <v-app id="inspire">
-        <v-toolbar fixed flat app class="navigation">
+        <v-toolbar fixed flat app class="navigation" height="60">
             <v-container :fluid="breakpoint.xsOnly" pa-0>
                 <v-layout row wrap justify-center pa-0>
                     <v-flex xl6 lg9 md11 sm10 xs12 :pl-4="breakpoint.xsOnly">

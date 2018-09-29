@@ -11,7 +11,7 @@
                 <v-divider></v-divider>
             </v-flex>
             <div class="post-detail__actions">
-                <div class="post-detail__action" @click="$router.go(-1)">
+                <div class="post-detail__action" @click="$router.back()">
                     <v-btn flat icon outline color="primary" ma-0>
                         <v-icon>keyboard_arrow_left</v-icon>
                     </v-btn>
@@ -23,11 +23,16 @@
 </template>
 
 <script lang="ts">
-    import { Component, Prop, Vue } from "nuxt-property-decorator";
+    import { Component, Prop, Vue, Watch } from "nuxt-property-decorator";
 
     @Component({})
     export default class PostDetail extends Vue {
         @Prop({required: true}) post;
+
+        @Watch('route')
+        onRoutChanged(val: string, oldVal: string) {
+            console.log(val);
+        }
     }
 </script>
 

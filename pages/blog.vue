@@ -52,6 +52,7 @@
         // onUrlChange(newVal: any) {
         //     // Some action
         // }
+        public scrollToTop: true;
         public isHydrated: boolean = false;
 
         get breakpoint() {

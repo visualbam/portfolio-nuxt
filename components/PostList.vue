@@ -17,13 +17,13 @@
         public items = [
             {
                 id: 0,
-                title: 'My first design post!',
+                title: 'My first design post! More design related content to come.',
                 summary: 'Unfortunately, this is a work in progress and there is no real content for you to read here. I apologize for the inconvenience. Feel free to shoot me an email in the mean time if you have any questions!',
                 meta: { category: 'design', publishDate: 'September 28th, 2018' }
             },
             {
                 id: 1,
-                title: 'My first development post!',
+                title: 'My first development post! More development related content to come.',
                 summary: 'Unfortunately, this is a work in progress and there is no real content for you to read here. I apologize for the inconvenience. Feel free to shoot me an email in the mean time if you have any questions!',
                 meta: { category: 'development', publishDate: 'September 28th, 2018' }
             },
