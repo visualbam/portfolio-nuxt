@@ -8,6 +8,6 @@
 
     @Component({ components: { PostList } })
     export default class extends Vue {
-
+        public scrollToTop: true;
     }
 </script>

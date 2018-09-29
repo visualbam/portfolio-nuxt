@@ -1,5 +1,21 @@
 <template>
     <div class="blog-page">
+        <!--<v-toolbar fixed flat app pb-3 class="blog-filters">-->
+            <!--<v-container :fluid="breakpoint.xsOnly" pa-0>-->
+                <!--<v-layout row wrap justify-center pa-0>-->
+                    <!--<v-flex xl6 lg9 md11 sm10 xs12>-->
+                        <!--<v-toolbar card tabs>-->
+                            <!--<v-tabs grow slider-color="primary">-->
+                                <!--<v-tab to="/blog/ui-ux"> UI/UX </v-tab>-->
+                                <!--<v-tab to="/blog/design"> Design</v-tab>-->
+                                <!--<v-tab to="/blog/development"> Development</v-tab>-->
+                            <!--</v-tabs>-->
+                        <!--</v-toolbar>-->
+                    <!--</v-flex>-->
+                <!--</v-layout>-->
+            <!--</v-container>-->
+        <!--</v-toolbar>-->
+
         <v-container :fluid="breakpoint.xsOnly" pa-0>
             <v-layout row wrap justify-center pa-0 pb-3>
                 <v-flex xl6 lg9 md11 sm10 xs12>

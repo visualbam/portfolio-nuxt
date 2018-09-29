@@ -7,12 +7,15 @@
             </div>
             <h2 class="post-detail__title headline">{{post.title}}</h2>
             <div class="post-detail__content" v-html="post.content"></div>
+            <v-flex mt-5 mb-3>
+                <v-divider></v-divider>
+            </v-flex>
             <div class="post-detail__actions">
-                <div class="post-detail__action">
-                    <v-btn flat outline color="primary" @click="$router.go(-1)">
-                        <v-icon left>keyboard_arrow_left</v-icon>
-                        Go back
+                <div class="post-detail__action" @click="$router.go(-1)">
+                    <v-btn flat icon outline color="primary" ma-0>
+                        <v-icon>keyboard_arrow_left</v-icon>
                     </v-btn>
+                    <span class="primary--text"> Go Back </span>
                 </div>
             </div>
         </v-flex>
