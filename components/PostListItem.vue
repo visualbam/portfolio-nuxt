@@ -12,7 +12,7 @@
                 <div class="post-list-item__content">{{post.summary}}</div>
                 <div class="post-list-item__actions">
                     <div class="post-list-item__action">
-                        <v-btn flat outline color="primary" :to="`/blog/${$route.params.category}/${post.id}`">
+                        <v-btn flat outline color="primary">
                             view post
                         </v-btn>
                     </div>

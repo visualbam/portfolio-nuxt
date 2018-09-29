@@ -1,17 +1,13 @@
 <template>
     <div class="blog-page">
-        <v-container :fluid="$vuetify.breakpoint.xsOnly" pa-0>
-            <v-layout row wrap justify-center pa-0>
-                <v-flex xl6 lg9 md11 sm10 xs12 pb-4>
-                            <div class="blog-header">
-                                <v-tabs grow slider-color="primary" height="55">
-                                    <v-tab to="/blog/ui-ux"> UI/UX</v-tab>
-                                    <v-tab to="/blog/design"> Design</v-tab>
-                                    <v-tab to="/blog/development"> Development</v-tab>
-                                </v-tabs>
-                            </div>
-                        </v-flex>
-                    </v-layout>
+        <v-container :fluid="breakpoint.xsOnly" pa-0>
+            <v-layout row wrap justify-center pa-0 pb-3>
+                <v-flex xl6 lg9 md11 sm10 xs12>
+                    <v-tabs grow slider-color="primary" height="55">
+                        <v-tab to="/blog/ui-ux"> UI/UX </v-tab>
+                        <v-tab to="/blog/design"> Design</v-tab>
+                        <v-tab to="/blog/development"> Development</v-tab>
+                    </v-tabs>
                 </v-flex>
             </v-layout>
         </v-container>
@@ -34,30 +30,41 @@
 <script lang="ts">
     import { Component, Vue, Watch } from "nuxt-property-decorator";
 
-    let TweenMax;
-    if (process['browser']) {
-        TweenMax = require("gsap/TweenMax");
-    }
-
     @Component({})
     export default class extends Vue {
         // @Watch('$route', { immediate: true, deep: true })
         // onUrlChange(newVal: any) {
         //     // Some action
         // }
+        public isHydrated: boolean = false;
+
+        get breakpoint() {
+            return this.isHydrated
+                ? this.$vuetify.breakpoint
+                : {
+                    xs: true,
+                    xsOnly: true,
+                    xsAndUp: false,
+                    sm: true,
+                    smOnly: true,
+                    smAndDown: true,
+                    smAndUp: false,
+                    md: false,
+                    mdOnly: false,
+                    mdAndDown: false,
+                    mdAndUp: false,
+                    lg: false,
+                    lgOnly: false,
+                    lgAndDown: false,
+                    lgAndUp: false,
+                    xl: false,
+                    xlOnly: false,
+                    xlAndDown: false
+                }// "empty" $breakpoint object with initial values
+        }
 
         mounted() {
-            // TweenMax.to(this.$refs['blog-header'], 1, {
-            //     opacity: 1
-            // });
-            // fade.add();
-            // console.log();
-            // fade.set(this.$refs['blog-header'], {
-            //     opacity: 0
-            // });
-            // fade.to(this.$refs['blog-header'], 2, {
-            //     opacity: 1
-            // });
+            this.isHydrated = true
         }
 
     }
