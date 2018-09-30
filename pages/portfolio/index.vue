@@ -54,6 +54,7 @@
             { image: require('~/assets/images/portfolio/pti_headstart.png') },
             { image: require('~/assets/images/portfolio/reward_logo.png') },
             { image: require('~/assets/images/portfolio/pti_os.png') },
+            { image: require('~/assets/images/portfolio/tap1_logo.png') },
             { image: require('~/assets/images/portfolio/pti_rvhps.png') },
             { image: require('~/assets/images/portfolio/tap2_logo.png') },
             { image: require('~/assets/images/portfolio/pti_stpatrick.png') },
@@ -62,8 +63,6 @@
             { image: require('~/assets/images/portfolio/scrum_logo.png') },
             { image: require('~/assets/images/portfolio/resume_old.png') },
             { image: require('~/assets/images/portfolio/viva_logo.png') },
-            { image: require('~/assets/images/portfolio/pti_newyears.png') },
-            { image: require('~/assets/images/portfolio/tap1_logo.png') },
         ];
     }
 </script>
