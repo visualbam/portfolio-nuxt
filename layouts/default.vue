@@ -34,11 +34,6 @@
         public isHydrated: boolean = false;
         public routes = [
             {
-                icon: 'speaker_notes',
-                route: '/',
-                title: 'Resume'
-            },
-            {
                 icon: 'favorite',
                 route: '/portfolio',
                 title: 'Portfolio'
