@@ -11,7 +11,6 @@
 
     @Component({components: {PostDetail}})
     export default class extends Vue {
-        public scrollToTop: true;
         public items = [
             {
                 id: 0,
